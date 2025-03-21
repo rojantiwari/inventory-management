@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef } from "react";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import {
@@ -81,6 +83,7 @@ export default function StoreProvider({
   children: React.ReactNode;
 }) {
   const storeRef = useRef<AppStore>();
+
   if (!storeRef.current) {
     storeRef.current = makeStore();
     setupListeners(storeRef.current.dispatch);
