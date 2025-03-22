@@ -12,6 +12,7 @@ import userRoutes from "./routes/userRoutes";
 import expenseRoutes from "./routes/expenseRoutes";
 
 
+
 /* configuration */
 dotenv.config();
 const app = express();
@@ -23,11 +24,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
+
+
 /* ROUTES */
 app.use("/dashboard", dashboardRoutes); // http://localhost:8000/dashboard
 app.use("/products", productRoutes); // http://localhost:8000/products
 app.use("/users", userRoutes); // http://localhost:8000/users
 app.use("/expenses", expenseRoutes); // http://localhost:8000/expenses
+
 
 
 
