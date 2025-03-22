@@ -25,4 +25,5 @@ AWS //
 setting up involving vpc
 step-1 - create own vpn by choosing own region
 step2 - setting up subnet as after settingup subnet we only can deploy our project
-to access vpc or subnet need to setup internet gateway
+step3 - to access vpc or subnet need to setup internet gateway
+step4 - setting up route table
