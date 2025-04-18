@@ -82,13 +82,13 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        {/* <Image
+        <Image
           src="https://th.bing.com/th/id/OIP.9uQeXJPOGm7x6d4fFhnXxAHaD4?rs=1&pid=ImgDetMain"
           alt="edstock-logo"
           width={27}
           height={27}
           className="rounded w-8"
-        /> */}
+        />
         <div>Logo</div>
         <h1
           className={`${
